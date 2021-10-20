@@ -282,12 +282,13 @@
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
+                    alert("Form submitted successfully");
+                    
                     window.location.href="https://osamamustaquim.github.io/Portfolio/#home"
+                    window.location.reload();
                 },
                 error:function (err){
-                    alert("Something Error")
+                    alert("Something Error");
     
                 }
             })
