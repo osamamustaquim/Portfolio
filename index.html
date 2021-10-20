@@ -284,11 +284,12 @@
                 success:function (response){
                     alert("Form submitted successfully");
                     
-                    window.location.aassign("https://osamamustaquim.github.io/Portfolio/#home");                    
+                    window.location.aassign("https://osamamustaquim.github.io/Portfolio/#home");  
+                    document.getElementById('submit-form').reset();
                 },
                 error:function (err){
                     alert("Form submitted successfully");
-                    window.location.reload();    
+                    document.getElementById('submit-form').reset();   
                 }
             })
         })
