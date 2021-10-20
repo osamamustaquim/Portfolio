@@ -228,17 +228,17 @@
                     <form id="submit-form" action="" >
                         <div class="feilds">
                             <div class="feild name">
-                                <input type="text" name="entry.1407190476" id="FullName" placeholder="Name" required>
+                                <input type="text" name="entry.1040673971" id="FullName" placeholder="Name" required>
                             </div>
                             <div class="feild email">
-                                <input type="email" name="entry.2045770699" id="Mail" placeholder="Email" required>
+                                <input type="email" name="entry.1910864279" id="Mail" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="feild">
-                            <input type="number" name="entry.168029160" id="Mobile" placeholder="Phone" required>
+                            <input type="number" name="entry.2070581611" id="Mobile" placeholder="Phone" required>
                         </div>
                         <div class="feild textarea">
-                            <textarea name="entry.1548837592" id="message" cols="30" rows="10" placeholder="Job Description..."
+                            <textarea name="entry.206109397" id="message" cols="30" rows="10" placeholder="Job Description..."
                                 required></textarea>
                         </div>
                         <div class="button">
@@ -274,7 +274,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSeds_oLxHaO4BSRkyacN889LKQJA0IkJm1I-Xs7WdZZAFBxbQ/formResponse",
+                url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzB-CUsr8GQwNUbRsc6znJoRMjh8L_kt94WKO0yH9jaMYv3Q/formResponse",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
