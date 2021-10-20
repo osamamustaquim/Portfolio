@@ -229,7 +229,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message Me</div>
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzB-CUsr8GQwNUbRsc6znJoRMjh8L_kt94WKO0yH9jaMYv3Q/formResponse" target="_self" method="POST" id="mG61Hd">
+                    <form id="submit-form" action="" >
                         <div class="feilds">
                             <div class="feild name">
                                 <input type="text" name="entry.135425192" id="FullName" placeholder="Name" required>
@@ -271,6 +271,28 @@
         </footer>
     </div>
     <script src="assets/js/main.js"></script>
+    
+    
+    
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzB-CUsr8GQwNUbRsc6znJoRMjh8L_kt94WKO0yH9jaMYv3Q/formResponse",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    window.location.href="https://osamamustaquim.github.io/Portfolio/#home"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
